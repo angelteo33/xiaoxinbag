@@ -2,44 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Bags - Xiaoxin Bag Shop</title>
+  <title>Products - Xiaoxin Bag Shop</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .price {
+      font-weight: bold;
+      margin: 10px 0;
+      color: #333;
+    }
+    .buy-btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    .buy-btn:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <h1>Our Bags</h1>
-    <section class="gallery" aria-label="Product gallery">
-      <article class="item">
-        <figure>
-          <img src="images/bag1.jpg" alt="Crossbody bag model KP81226" loading="lazy">
-          <figcaption>
-            <p class="name">KP81226</p>
-            <p class="price">$50</p>
-          </figcaption>
-        </figure>
-      </article>
 
-      <article class="item">
-        <figure>
-          <img src="images/bag2.jpg" alt="Shoulder bag in black" loading="lazy">
-          <figcaption>
-            <p class="name">Bag 2</p>
-            <p class="price">$60</p>
-          </figcaption>
-        </figure>
-      </article>
+  <h1>Our Bags</h1>
 
-      <article class="item">
-        <figure>
-          <img src="images/bag3.jpg" alt="Tote bag in beige" loading="lazy">
-          <figcaption>
-            <p class="name">Bag 3</p>
-            <p class="price">$70</p>
-          </figcaption>
-        </figure>
-      </article>
-    </section>
-  </main>
+  <div class="products-container">
+    <div class="product">
+      <img src="images/bag1.jpg" alt="Bag 1">
+      <div class="price">$49.99</div>
+      <a href="https://www.example.com/checkout?item=bag1" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product">
+      <img src="images/bag2.jpg" alt="Bag 2">
+      <div class="price">$59.99</div>
+      <a href="https://www.example.com/checkout?item=bag2" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="product">
+      <img src="images/bag3.jpg" alt="Bag 3">
+      <div class="price">$69.99</div>
+      <a href="https://www.example.com/checkout?item=bag3" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
 </body>
 </html>
