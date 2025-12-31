@@ -2,29 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our Bags - Xiaoxin Bag Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <h1>Our Bags</h1>
-    <div class="gallery">
-      <div class="item">
-        <img src="Images:bag1.jpg" alt="Bag 1">
-        <p class="name">KP81226</p>
-        <p class="price">$50</p>
-      </div>
-      <div class="item">
-        <img src="Images:bag2.jpg" alt="Bag 2">
-        <p class="name">Bag 2</p>
-        <p class="price">$60</p>
-      </div>
-      <div class="item">
-        <img src="Images:bag3.jpg" alt="Bag 3">
-        <p class="name">Bag 3</p>
-        <p class="price">$70</p>
-      </div>
-    </div>
-  </div>
+    <section class="gallery" aria-label="Product gallery">
+      <article class="item">
+        <figure>
+          <img src="images/bag1.jpg" alt="Crossbody bag model KP81226" loading="lazy">
+          <figcaption>
+            <p class="name">KP81226</p>
+            <p class="price">$50</p>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="item">
+        <figure>
+          <img src="images/bag2.jpg" alt="Shoulder bag in black" loading="lazy">
+          <figcaption>
+            <p class="name">Bag 2</p>
+            <p class="price">$60</p>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="item">
+        <figure>
+          <img src="images/bag3.jpg" alt="Tote bag in beige" loading="lazy">
+          <figcaption>
+            <p class="name">Bag 3</p>
+            <p class="price">$70</p>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
